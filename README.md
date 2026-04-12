@@ -1,19 +1,34 @@
 # 📦 Inventory Demand Forecasting & Optimization System
 
-## 🚀 Overview
+## 🌐 Live Demo
 
-This project builds an end-to-end inventory management system that forecasts product demand and converts predictions into actionable inventory decisions.
-
-It combines time-series forecasting with classical inventory optimization techniques to reduce stockouts and holding costs.
+👉 https://inventory-forecasting-wdqvzpw54aspjxnk2jfor6.streamlit.app/
 
 ---
 
-## 🎯 Objectives
+## 📸 Dashboard Preview
 
-* Predict future demand using time-series models
-* Compare ML (LSTM) and statistical (Prophet) approaches
-* Optimize inventory using EOQ and Safety Stock
-* Provide actionable reorder decisions
+
+![Dashboard](![alt text](image.png))
+
+---
+
+## 🚀 Overview
+
+This project builds an **end-to-end inventory management system** that forecasts product demand and converts predictions into actionable inventory decisions.
+
+It combines **time-series forecasting (Prophet, LSTM)** with **operations research techniques (EOQ, Safety Stock)** to optimize inventory levels and reduce stockouts.
+
+---
+
+## 💡 Why This Project?
+
+Retail businesses often struggle with balancing inventory:
+
+* 📉 Overstock → high holding costs
+* 📈 Understock → lost sales
+
+This system uses **machine learning + optimization** to make **data-driven inventory decisions**, similar to real-world supply chain systems.
 
 ---
 
@@ -22,12 +37,14 @@ It combines time-series forecasting with classical inventory optimization techni
 ### 🔹 Prophet
 
 * Captures trend and seasonality effectively
-* Achieved ~11% MAE on real retail dataset
+* Achieved ~11% MAE on dataset
+* Best performing model in this project
 
 ### 🔹 LSTM
 
-* Deep learning approach for sequence modeling
-* Compared against Prophet to analyze performance differences
+* Deep learning model for time-series
+* Used for comparison
+* Showed underfitting due to limited feature engineering
 
 ---
 
@@ -38,6 +55,7 @@ It combines time-series forecasting with classical inventory optimization techni
 
   * Store 1
   * Product category: GROCERY I
+* Reduced dataset used for deployment
 
 ---
 
@@ -48,27 +66,39 @@ It combines time-series forecasting with classical inventory optimization techni
 3. Model evaluation (MAE)
 4. Inventory optimization:
 
-   * Economic Order Quantity (EOQ)
+   * EOQ (Economic Order Quantity)
    * Safety Stock
    * Reorder Point
+5. Interactive dashboard visualization
 
 ---
 
 ## 📦 Inventory Optimization
 
-* **EOQ**: Determines optimal order size
-* **Safety Stock**: Handles demand uncertainty
-* **Reorder Point**: Indicates when to reorder
+* **EOQ** → Optimal order size minimizing cost
+* **Safety Stock** → Buffer for demand uncertainty
+* **Reorder Point** → When to place new order
 
 ---
 
 ## 📈 Results
 
-* MAE: ~280 (~11% error)
-* Monthly Demand: ~78,000 units
-* EOQ: ~1,975 units
-* Safety Stock: ~3,400 units
-* Reorder Point: ~21,600 units
+* 📊 MAE: ~280 (~11% error)
+* 📦 Monthly Demand: ~78,000 units
+* 📦 EOQ: ~1,975 units
+* 📦 Safety Stock: ~3,400 units
+* 📦 Reorder Point: ~21,600 units
+
+---
+
+## 🚀 Features
+
+* 📊 Demand forecasting using Prophet
+* 🤖 LSTM model comparison
+* 📦 Inventory optimization (EOQ + Safety Stock)
+* ⚠️ Real-time inventory alerts
+* 🎛️ Interactive dashboard (Streamlit)
+* 🌐 Deployed web application
 
 ---
 
@@ -77,29 +107,23 @@ It combines time-series forecasting with classical inventory optimization techni
 ```
 inventory-forecasting/
 │
-├── data/
-├── src/
-├── main.py
+├── dashboard/          # Streamlit app
+├── data/               # Dataset (small version for deployment)
+├── src/                # Core modules
+├── main.py             # Pipeline
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## 💡 Key Insights
+## ▶️ How to Run Locally
 
-* Prophet outperformed LSTM for this dataset due to strong seasonality
-* LSTM showed underfitting without feature engineering
-* Inventory optimization adds real-world business value beyond prediction
-
----
-
-## 🔥 Future Improvements
-
-* Multi-product and multi-store support
-* Real-time demand forecasting API
-* Dashboard for visualization
-* Feature engineering for LSTM improvement
+```bash
+pip install -r requirements.txt
+streamlit run dashboard/app.py
+```
 
 ---
 
@@ -110,9 +134,26 @@ inventory-forecasting/
 * Prophet
 * PyTorch
 * Matplotlib
+* Streamlit
+
+---
+
+## 🔮 Future Improvements
+
+* Multi-store & multi-product forecasting
+* Feature engineering for LSTM
+* Real-time data pipeline
+* Cloud-based deployment with APIs
+* Advanced ensemble models
 
 ---
 
 ## 📌 Conclusion
 
-This project demonstrates how machine learning can be integrated with operations research to build intelligent inventory systems.
+This project demonstrates how **machine learning + optimization** can be combined to build intelligent inventory systems that provide **actionable business decisions**, not just predictions.
+
+---
+
+## 👤 Author
+
+Samrat Roy Choudhury
