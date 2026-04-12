@@ -2,14 +2,14 @@
 
 ## 🌐 Live Demo
 
-👉 https://inventory-forecasting-wdqvzpw54aspjxnk2jfor6.streamlit.app/
+👉 https://your-app-name.streamlit.app
 
 ---
 
 ## 📸 Dashboard Preview
 
 
-![Dashboard](![alt text](image.png))
+![Dashboard](dashboard/image.png)
 
 ---
 
