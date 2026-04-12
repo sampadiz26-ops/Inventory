@@ -9,7 +9,7 @@
 ## 📸 Dashboard Preview
 
 
-(dashboard/image.png)
+![Dashboard](dashboard/image.png)
 
 ---
 
