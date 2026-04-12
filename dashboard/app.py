@@ -1,8 +1,9 @@
 # =========================
-# FIX IMPORT PATH
+# FIX IMPORT PATH (IMPORTANT)
 # =========================
 import sys
 import os
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # =========================
@@ -27,9 +28,10 @@ st.set_page_config(page_title="Inventory Dashboard", layout="wide")
 st.title("📦 Inventory Demand Forecasting Dashboard")
 
 # =========================
-# LOAD DATA
+# LOAD DATA (FIXED PATH)
 # =========================
-df = pd.read_csv("data/train.csv")
+data_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'train.csv')
+df = pd.read_csv(data_path)
 
 # =========================
 # SIDEBAR FILTERS
