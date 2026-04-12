@@ -30,7 +30,7 @@ st.title("📦 Inventory Demand Forecasting Dashboard")
 # =========================
 # LOAD DATA (FIXED PATH)
 # =========================
-data_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'train.csv')
+data_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'train_small.csv')
 df = pd.read_csv(data_path)
 
 # =========================
