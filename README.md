@@ -2,7 +2,7 @@
 
 ## 🌐 Live Demo
 
-👉 https://your-app-name.streamlit.app
+👉 https://inventory-forecasting-wdqvzpw54aspjxnk2jfor6.streamlit.app/
 
 ---
 
